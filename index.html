@@ -230,12 +230,9 @@
                 Adicionar
               </button>
             </div>
-                        <div class="item">
+            <div class="item">
               <p><strong>Ovo</strong> - R$ 3,00</p>
-              <button
-                type="button"
-                onclick="adicionarItem('Adicional Ovo', 3)"
-              >
+              <button type="button" onclick="adicionarItem('Adicional Ovo', 3)">
                 Adicionar
               </button>
             </div>
@@ -402,6 +399,7 @@
         <ul id="lista-pedido" aria-label="Itens do pedido"></ul>
         <p id="total" aria-live="polite">Total: R$ 0,00</p>
 
+        <!-- Tipo de pedido -->
         <label for="tipo">Tipo de Pedido:</label>
         <select id="tipo" aria-required="true">
           <option value="retirada">Retirada</option>
@@ -416,7 +414,34 @@
           />
         </div>
 
-        <!-- Novo campo Forma de Pagamento -->
+        <!-- Bairro / Taxa -->
+        <label for="bairro">Bairro:</label>
+        <select id="bairro" aria-required="true">
+          <option value="">-- Selecione --</option>
+          <option value="Alto da Ponte">Alto da Ponte</option>
+          <option value="Altos da Vila Paiva">Altos da Vila Paiva</option>
+          <option value="Altos de Santana">Altos de Santana</option>
+          <option value="Altos do Caete">Altos do Caete</option>
+          <option value="Vila Unidos">Vila Unidos</option>
+          <option value="Caete">Caete</option>
+          <option value="Centro">Centro</option>
+          <option value="Jardim Guimarães">Jardim Guimarães</option>
+          <option value="JD Minas Gerais">JD Minas Gerais</option>
+          <option value="Monte Castelo">Monte Castelo</option>
+          <option value="Petybon">Petybon</option>
+          <option value="Santana">Santana</option>
+          <option value="Telespark">Telespark</option>
+          <option value="Vila Cristina">Vila Cristina</option>
+          <option value="Vila Dirce">Vila Dirce</option>
+          <option value="Vila Jaci">Vila Jaci</option>
+          <option value="Vila Machado">Vila Machado</option>
+          <option value="Vila Paiva">Vila Paiva</option>
+          <option value="Vila São Geraldo">Vila São Geraldo</option>
+          <option value="Vila Sinha">Vila Sinha</option>
+          <option value="rural">Áreas Rurais</option>
+        </select>
+
+        <!-- Forma de Pagamento -->
         <label for="pagamento">Forma de Pagamento:</label>
         <select id="pagamento" aria-required="true">
           <option value="dinheiro">Dinheiro</option>
